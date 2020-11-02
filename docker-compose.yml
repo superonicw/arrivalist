@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    command: rails server -b 0.0.0.0
+    container_name: arrivalist-backend
+    volumes:
+      - ./backend:/backend
+    ports:
+      - '8000:3000'
+
+  frontend:
+    build: ./frontend
+    command: yarn start
+    container_name: arrivalist-frontend
+    volumes:
+      - ./frontend:/frontend
+      - /frontend/node_modules
+    stdin_open: true
+    ports:
+      - '3000:3000'
