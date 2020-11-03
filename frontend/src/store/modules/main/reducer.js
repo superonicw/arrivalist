@@ -1,35 +1,28 @@
 import { handleActions } from 'redux-actions'
 import { successAction, failAction } from 'utils/state-helpers'
-import { LIST_RECORD } from './actions'
+import { LIST_TRIP } from './actions'
 
 export const INITIAL_STATE = {
-  data: {
-    record: [],
-    meta: {
-      page: 1,
-      page_size: 10,
-      total: 0,
-    },
-  },
+  trips: [],
   loading: false,
   error: null,
 }
 
 export const reducer = handleActions(
   {
-    [LIST_RECORD]: state => ({
+    [LIST_TRIP]: state => ({
       ...state,
       error: null,
       loading: true,
     }),
 
-    [successAction(LIST_RECORD)]: (state, { payload }) => ({
+    [successAction(LIST_TRIP)]: (state, { payload }) => ({
       ...state,
-      data: payload,
+      trips: payload,
       loading: false,
     }),
 
-    [failAction(LIST_RECORD)]: (state, { payload }) => ({
+    [failAction(LIST_TRIP)]: (state, { payload }) => ({
       ...state,
       loading: false,
       error: payload,
