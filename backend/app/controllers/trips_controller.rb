@@ -4,12 +4,10 @@ class TripsController < ApplicationController
   end
 
   def trips
-    if not params[:state].present? and not params[:date].present?
-      list = Trip.none
-    else
-      list = Trip.all
-      list = list.where(home_state: params[:state]) if params[:state].present?
-      list
-    end
+    list = Trip.all
+    list = list.where(home_state: params[:state]) if params[:state].present?
+    list = list.where('trip_date >= ?', params[:start]) if params[:start].present?
+    list = list.where('trip_date <= ?', params[:end]) if params[:end].present?
+    list
   end
 end

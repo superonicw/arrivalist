@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_11_02_095705) do
 
   create_table "trips", force: :cascade do |t|
-    t.datetime "trip_date", default: "2020-11-02 10:01:25", null: false
+    t.datetime "trip_date", null: false
     t.string "home_state", limit: 2, null: false
     t.integer "trip_count", default: 0
     t.datetime "created_at", precision: 6, null: false
