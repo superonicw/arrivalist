@@ -1,11 +1,9 @@
 import { get } from 'lodash'
 
-export const selectRushingState = state => get(state, 'rushing')
+export const selectMainState = state => get(state, 'main')
 
-export const selectRushingData = state => get(state, 'rushing.data')
+export const selectTrips = state => get(state, 'main.trips')
 
-export const selectTeams = state => get(state, 'rushing.teams')
+export const selectLoading = state => get(state, 'main.loading')
 
-export const selectRushingLoading = state => get(state, 'rushing.loading')
-
-export const selectRushingError = state => get(state, 'rushing.error')
+export const selectError = state => get(state, 'main.error')

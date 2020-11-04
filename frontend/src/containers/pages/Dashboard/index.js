@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { pickBy, identity } from 'lodash'
 import { makeStyles } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import AppBar from '@material-ui/core/AppBar'
+import Button from '@material-ui/core/Button'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
-import IconButton from '@material-ui/core/IconButton'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
-import MenuIcon from '@material-ui/icons/Menu'
+import CircularProgress from '@material-ui/core/CircularProgress'
+import { listTrip, selectTrips, selectLoading } from 'store/modules/main'
+import { Filter, LineChart, MapChart } from 'components'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -46,23 +50,39 @@ const useStyles = makeStyles(theme => ({
     overflow: 'auto',
     flexDirection: 'column',
   },
+  button: {
+    marginTop: theme.spacing(2),
+  },
 }))
 
-export default function Dashboard() {
+const Dashboard = () => {
   const classes = useStyles()
+
+  const [state, setState] = useState('')
+  const [dates, setDates] = useState({ start: '', end: '' })
+
+  const trips = useSelector(selectTrips)
+  const loading = useSelector(selectLoading)
+
+  const dispatch = useDispatch()
+
+  function fetchData() {
+    const { start, end } = dates
+
+    if (!state && !start && !end) {
+      return
+    }
+
+    const params = pickBy({ state, start, end }, identity)
+
+    dispatch(listTrip({ params }))
+  }
 
   return (
     <div className={classes.root}>
       <CssBaseline />
       <AppBar position="absolute" className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
-          <IconButton
-            edge="start"
-            color="inherit"
-            className={classes.menuButton}
-          >
-            <MenuIcon />
-          </IconButton>
           <Typography
             component="h1"
             variant="h6"
@@ -77,11 +97,39 @@ export default function Dashboard() {
 
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
-        <Container maxWidth="xxl" className={classes.container}>
+        <Container maxWidth={false} className={classes.container}>
           <Grid container spacing={3}>
-            <Grid item xs={12}>
+            <Grid item xs={12} md={2}>
               <Paper className={classes.paper}>
-                <div>ABC</div>
+                <Filter
+                  state={state}
+                  dates={dates}
+                  onStateChange={setState}
+                  onDatesChange={setDates}
+                />
+                <Button
+                  variant="contained"
+                  color="primary"
+                  className={classes.button}
+                  disabled={(!state && !dates.start && !dates.end) || loading}
+                  onClick={fetchData}
+                >
+                  {loading ? (
+                    <CircularProgress color="secondary" size={24} />
+                  ) : (
+                    'Search'
+                  )}
+                </Button>
+              </Paper>
+            </Grid>
+            <Grid item xs={12} md={5}>
+              <Paper className={classes.paper}>
+                <LineChart width={700} height={548} trips={trips} />
+              </Paper>
+            </Grid>
+            <Grid item xs={12} md={5}>
+              <Paper className={classes.paper}>
+                <MapChart trips={trips} />
               </Paper>
             </Grid>
           </Grid>
@@ -90,3 +138,5 @@ export default function Dashboard() {
     </div>
   )
 }
+
+export default Dashboard
