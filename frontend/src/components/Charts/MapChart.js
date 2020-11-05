@@ -1,4 +1,4 @@
-import React, { useState, useMemo, memo } from 'react'
+import React, { useState, useMemo } from 'react'
 import ReactTooltip from 'react-tooltip'
 import { geoCentroid } from 'd3-geo'
 import {
@@ -46,7 +46,7 @@ const MapChart = ({ trips }) => {
   }, [trips])
 
   return (
-    <div>
+    <div className="mapchart">
       <ComposableMap data-tip="" projection="geoAlbersUsa">
         <Geographies geography={mapData}>
           {({ geographies }) => (
@@ -125,4 +125,4 @@ const MapChart = ({ trips }) => {
   )
 }
 
-export default memo(MapChart)
+export default MapChart

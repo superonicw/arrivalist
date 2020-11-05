@@ -5,7 +5,7 @@ import MenuItem from '@material-ui/core/MenuItem'
 import FormControl from '@material-ui/core/FormControl'
 import Select from '@material-ui/core/Select'
 import TextField from '@material-ui/core/TextField'
-import { STATE_ABBREVS } from 'config/constants'
+import { STATES } from 'config/constants'
 
 const useStyles = makeStyles(theme => ({
   button: {
@@ -17,20 +17,21 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const Filter = ({ state, dates, onStateChange, onDatesChange }) => {
+const Filter = ({ states, dates, onStatesChange, onDatesChange }) => {
   const classes = useStyles()
 
   return (
     <React.Fragment>
       <FormControl className={classes.formControl}>
         <InputLabel shrink>State</InputLabel>
-        <Select value={state} onChange={evt => onStateChange(evt.target.value)}>
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          {STATE_ABBREVS.map(state => (
-            <MenuItem key={state} value={state}>
-              {state}
+        <Select
+          value={states}
+          multiple
+          onChange={evt => onStatesChange(evt.target.value)}
+        >
+          {STATES.map(state => (
+            <MenuItem key={state.id} value={state.abbr}>
+              {state.name}
             </MenuItem>
           ))}
         </Select>

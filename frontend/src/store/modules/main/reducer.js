@@ -1,6 +1,6 @@
 import { handleActions } from 'redux-actions'
 import { successAction, failAction } from 'utils/state-helpers'
-import { LIST_TRIP } from './actions'
+import { LIST_TRIP, CLEAR_TRIP } from './actions'
 
 export const INITIAL_STATE = {
   trips: [],
@@ -14,6 +14,11 @@ export const reducer = handleActions(
       ...state,
       error: null,
       loading: true,
+    }),
+
+    [CLEAR_TRIP]: state => ({
+      ...state,
+      trips: [],
     }),
 
     [successAction(LIST_TRIP)]: (state, { payload }) => ({

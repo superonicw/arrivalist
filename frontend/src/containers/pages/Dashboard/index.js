@@ -10,8 +10,14 @@ import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
+import FormControl from '@material-ui/core/FormControl'
 import CircularProgress from '@material-ui/core/CircularProgress'
-import { listTrip, selectTrips, selectLoading } from 'store/modules/main'
+import {
+  listTrip,
+  clearTrip,
+  selectTrips,
+  selectLoading,
+} from 'store/modules/main'
 import { Filter, LineChart, MapChart } from 'components'
 
 const useStyles = makeStyles(theme => ({
@@ -44,39 +50,57 @@ const useStyles = makeStyles(theme => ({
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
   },
-  paper: {
+  filter: {
     padding: theme.spacing(2),
     display: 'flex',
     overflow: 'auto',
     flexDirection: 'column',
   },
+  paper: {
+    padding: theme.spacing(2),
+    height: 600,
+  },
+  buttons: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    margin: theme.spacing(1),
+  },
   button: {
-    marginTop: theme.spacing(2),
+    width: 'calc(50% - 4px)',
   },
 }))
 
 const Dashboard = () => {
   const classes = useStyles()
 
-  const [state, setState] = useState('')
-  const [dates, setDates] = useState({ start: '', end: '' })
+  const [states, setStates] = useState(['AL'])
+  const [dates, setDates] = useState({ start: '2020-09-01', end: '' })
 
   const trips = useSelector(selectTrips)
   const loading = useSelector(selectLoading)
 
   const dispatch = useDispatch()
 
-  function fetchData() {
+  function handleFetchData() {
     const { start, end } = dates
 
-    if (!state && !start && !end) {
+    if (!states && !start && !end) {
       return
     }
 
-    const params = pickBy({ state, start, end }, identity)
+    const params = pickBy({ states: states.join(','), start, end }, identity)
 
     dispatch(listTrip({ params }))
   }
+
+  function handleReset() {
+    setStates([])
+    setDates({ start: '', end: '' })
+    dispatch(clearTrip())
+  }
+
+  const buttonDisabled =
+    (!dates.start && !dates.end && !states.length) || loading
 
   return (
     <div className={classes.root}>
@@ -99,36 +123,49 @@ const Dashboard = () => {
         <div className={classes.appBarSpacer} />
         <Container maxWidth={false} className={classes.container}>
           <Grid container spacing={3}>
-            <Grid item xs={12} md={2}>
-              <Paper className={classes.paper}>
+            <Grid item xs={12} md={3} lg={2}>
+              <Paper className={classes.filter}>
                 <Filter
-                  state={state}
+                  states={states}
                   dates={dates}
-                  onStateChange={setState}
+                  onStatesChange={setStates}
                   onDatesChange={setDates}
                 />
-                <Button
-                  variant="contained"
-                  color="primary"
-                  className={classes.button}
-                  disabled={(!state && !dates.start && !dates.end) || loading}
-                  onClick={fetchData}
-                >
-                  {loading ? (
-                    <CircularProgress color="secondary" size={24} />
-                  ) : (
-                    'Search'
-                  )}
-                </Button>
+                <FormControl className={classes.buttons}>
+                  <Button
+                    variant="contained"
+                    color="secondary"
+                    className={classes.button}
+                    disabled={buttonDisabled}
+                    onClick={handleReset}
+                  >
+                    Reset
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    className={classes.button}
+                    disabled={buttonDisabled}
+                    onClick={handleFetchData}
+                  >
+                    {loading ? (
+                      <CircularProgress color="secondary" size={24} />
+                    ) : (
+                      'Search'
+                    )}
+                  </Button>
+                </FormControl>
               </Paper>
             </Grid>
-            <Grid item xs={12} md={5}>
+            <Grid item xs={12} md={5} lg={5}>
               <Paper className={classes.paper}>
-                <LineChart width={700} height={548} trips={trips} />
+                <Typography variant="h6">Line</Typography>
+                <LineChart trips={trips} />
               </Paper>
             </Grid>
-            <Grid item xs={12} md={5}>
+            <Grid item xs={12} md={4} lg={5}>
               <Paper className={classes.paper}>
+                <Typography variant="h6">Map</Typography>
                 <MapChart trips={trips} />
               </Paper>
             </Grid>
