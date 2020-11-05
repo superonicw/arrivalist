@@ -16,14 +16,14 @@ RSpec.describe 'Trips', type: :request do
     expect(assigns(:trips).count).to eq(5)
   end
 
-  it 'get trips filtered by state' do
-    get '/api/trips/?state=AZ'
+  it 'get trips filtered by states' do
+    get '/api/trips/?states=AZ'
     expect(assigns(:trips).count).to eq(2)
 
-    get '/api/trips/?state=NY'
-    expect(assigns(:trips).count).to eq(3)
+    get '/api/trips/?states=AZ,NY'
+    expect(assigns(:trips).count).to eq(5)
 
-    get '/api/trips/?state=GA'
+    get '/api/trips/?states=GA'
     expect(assigns(:trips).count).to eq(0)
   end
 
@@ -35,11 +35,11 @@ RSpec.describe 'Trips', type: :request do
     expect(assigns(:trips).count).to eq(2)
   end
 
-  it 'get trips filtered by state and dates' do
-    get "/api/trips/?state=AZ&start=#{start_date}"
+  it 'get trips filtered by states and dates' do
+    get "/api/trips/?states=AZ&start=#{start_date}"
     expect(assigns(:trips).count).to eq(2)
 
-    get "/api/trips/?state=AZ&start=#{start_date}&end=#{end_date}"
+    get "/api/trips/?states=AZ&start=#{start_date}&end=#{end_date}"
     expect(assigns(:trips).count).to eq(1)
   end
 
