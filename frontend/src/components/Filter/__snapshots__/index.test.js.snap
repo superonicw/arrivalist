@@ -1,0 +1,2362 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter test renders correctly 1`] = `
+<Filter
+  dates={
+    Object {
+      "end": "2020-10-31",
+      "start": "2020-09-01",
+    }
+  }
+  onDatesChange={[MockFunction]}
+  onStatesChange={[MockFunction]}
+  states={
+    Array [
+      "AK",
+      "AL",
+    ]
+  }
+>
+  <WithStyles(ForwardRef(FormControl))
+    className="makeStyles-formControl-2"
+  >
+    <ForwardRef(FormControl)
+      className="makeStyles-formControl-2"
+      classes={
+        Object {
+          "fullWidth": "MuiFormControl-fullWidth",
+          "marginDense": "MuiFormControl-marginDense",
+          "marginNormal": "MuiFormControl-marginNormal",
+          "root": "MuiFormControl-root",
+        }
+      }
+    >
+      <div
+        className="MuiFormControl-root makeStyles-formControl-2"
+      >
+        <WithStyles(ForwardRef(InputLabel))
+          shrink={true}
+        >
+          <ForwardRef(InputLabel)
+            classes={
+              Object {
+                "animated": "MuiInputLabel-animated",
+                "asterisk": "MuiInputLabel-asterisk",
+                "disabled": "Mui-disabled",
+                "error": "Mui-error",
+                "filled": "MuiInputLabel-filled",
+                "focused": "Mui-focused",
+                "formControl": "MuiInputLabel-formControl",
+                "marginDense": "MuiInputLabel-marginDense",
+                "outlined": "MuiInputLabel-outlined",
+                "required": "Mui-required",
+                "root": "MuiInputLabel-root",
+                "shrink": "MuiInputLabel-shrink",
+              }
+            }
+            shrink={true}
+          >
+            <WithStyles(ForwardRef(FormLabel))
+              className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+              classes={
+                Object {
+                  "asterisk": "MuiInputLabel-asterisk",
+                  "disabled": "Mui-disabled",
+                  "error": "Mui-error",
+                  "focused": "Mui-focused",
+                  "required": "Mui-required",
+                }
+              }
+              data-shrink={true}
+            >
+              <ForwardRef(FormLabel)
+                className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                classes={
+                  Object {
+                    "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
+                    "colorSecondary": "MuiFormLabel-colorSecondary",
+                    "disabled": "Mui-disabled Mui-disabled",
+                    "error": "Mui-error Mui-error",
+                    "filled": "MuiFormLabel-filled",
+                    "focused": "Mui-focused Mui-focused",
+                    "required": "Mui-required Mui-required",
+                    "root": "MuiFormLabel-root",
+                  }
+                }
+                data-shrink={true}
+              >
+                <label
+                  className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+                  data-shrink={true}
+                >
+                  State
+                </label>
+              </ForwardRef(FormLabel)>
+            </WithStyles(ForwardRef(FormLabel))>
+          </ForwardRef(InputLabel)>
+        </WithStyles(ForwardRef(InputLabel))>
+        <WithStyles(ForwardRef(Select))
+          multiple={true}
+          onChange={[Function]}
+          value={
+            Array [
+              "AK",
+              "AL",
+            ]
+          }
+        >
+          <ForwardRef(Select)
+            classes={
+              Object {
+                "disabled": "Mui-disabled",
+                "filled": "MuiSelect-filled",
+                "icon": "MuiSelect-icon",
+                "iconFilled": "MuiSelect-iconFilled",
+                "iconOpen": "MuiSelect-iconOpen",
+                "iconOutlined": "MuiSelect-iconOutlined",
+                "nativeInput": "MuiSelect-nativeInput",
+                "outlined": "MuiSelect-outlined",
+                "root": "MuiSelect-root",
+                "select": "MuiSelect-select",
+                "selectMenu": "MuiSelect-selectMenu",
+              }
+            }
+            multiple={true}
+            onChange={[Function]}
+            value={
+              Array [
+                "AK",
+                "AL",
+              ]
+            }
+          >
+            <WithStyles(ForwardRef(Input))
+              inputComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "propTypes": Object {
+                    "IconComponent": [Function],
+                    "MenuProps": [Function],
+                    "SelectDisplayProps": [Function],
+                    "aria-label": [Function],
+                    "autoFocus": [Function],
+                    "autoWidth": [Function],
+                    "children": [Function],
+                    "className": [Function],
+                    "classes": [Function],
+                    "defaultValue": [Function],
+                    "disabled": [Function],
+                    "displayEmpty": [Function],
+                    "inputRef": [Function],
+                    "labelId": [Function],
+                    "multiple": [Function],
+                    "name": [Function],
+                    "onBlur": [Function],
+                    "onChange": [Function],
+                    "onClose": [Function],
+                    "onFocus": [Function],
+                    "onOpen": [Function],
+                    "open": [Function],
+                    "readOnly": [Function],
+                    "renderValue": [Function],
+                    "tabIndex": [Function],
+                    "type": [Function],
+                    "value": [Function],
+                    "variant": [Function],
+                  },
+                  "render": [Function],
+                }
+              }
+              inputProps={
+                Object {
+                  "IconComponent": Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                  },
+                  "MenuProps": undefined,
+                  "SelectDisplayProps": Object {
+                    "id": undefined,
+                  },
+                  "autoWidth": false,
+                  "children": Array [
+                    <ForwardRef(WithStyles)
+                      value="AL"
+                    >
+                      Alabama
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="AK"
+                    >
+                      Alaska
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="AZ"
+                    >
+                      Arizona
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="AR"
+                    >
+                      Arkansas
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="CA"
+                    >
+                      California
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="CO"
+                    >
+                      Colorado
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="CT"
+                    >
+                      Connecticut
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="DE"
+                    >
+                      Delaware
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="DC"
+                    >
+                      District of Columbia
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="FL"
+                    >
+                      Florida
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="GA"
+                    >
+                      Georgia
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="HI"
+                    >
+                      Hawaii
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="ID"
+                    >
+                      Idaho
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="IL"
+                    >
+                      Illinois
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="IN"
+                    >
+                      Indiana
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="IA"
+                    >
+                      Iowa
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="KS"
+                    >
+                      Kansas
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="KY"
+                    >
+                      Kentucky
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="LA"
+                    >
+                      Louisiana
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="ME"
+                    >
+                      Maine
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="MD"
+                    >
+                      Maryland
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="MA"
+                    >
+                      Massachusetts
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="MI"
+                    >
+                      Michigan
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="MN"
+                    >
+                      Minnesota
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="MS"
+                    >
+                      Mississippi
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="MO"
+                    >
+                      Missouri
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="MT"
+                    >
+                      Montana
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="NE"
+                    >
+                      Nebraska
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="NV"
+                    >
+                      Nevada
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="NH"
+                    >
+                      New Hampshire
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="NJ"
+                    >
+                      New Jersey
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="NM"
+                    >
+                      New Mexico
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="NY"
+                    >
+                      New York
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="NC"
+                    >
+                      North Carolina
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="ND"
+                    >
+                      North Dakota
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="OH"
+                    >
+                      Ohio
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="OK"
+                    >
+                      Oklahoma
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="OR"
+                    >
+                      Oregon
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="PA"
+                    >
+                      Pennsylvania
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="RI"
+                    >
+                      Rhode Island
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="SC"
+                    >
+                      South Carolina
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="SD"
+                    >
+                      South Dakota
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="TN"
+                    >
+                      Tennessee
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="TX"
+                    >
+                      Texas
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="UT"
+                    >
+                      Utah
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="VT"
+                    >
+                      Vermont
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="VA"
+                    >
+                      Virginia
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="WA"
+                    >
+                      Washington
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="WI"
+                    >
+                      West Virginia
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="WV"
+                    >
+                      Wisconsin
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="WY"
+                    >
+                      Wyoming
+                    </ForwardRef(WithStyles)>,
+                  ],
+                  "classes": Object {
+                    "disabled": "Mui-disabled",
+                    "filled": "MuiSelect-filled",
+                    "icon": "MuiSelect-icon",
+                    "iconFilled": "MuiSelect-iconFilled",
+                    "iconOpen": "MuiSelect-iconOpen",
+                    "iconOutlined": "MuiSelect-iconOutlined",
+                    "nativeInput": "MuiSelect-nativeInput",
+                    "outlined": "MuiSelect-outlined",
+                    "root": "MuiSelect-root",
+                    "select": "MuiSelect-select",
+                    "selectMenu": "MuiSelect-selectMenu",
+                  },
+                  "displayEmpty": false,
+                  "labelId": undefined,
+                  "multiple": true,
+                  "onClose": undefined,
+                  "onOpen": undefined,
+                  "open": undefined,
+                  "renderValue": undefined,
+                  "type": undefined,
+                  "variant": "standard",
+                }
+              }
+              onChange={[Function]}
+              value={
+                Array [
+                  "AK",
+                  "AL",
+                ]
+              }
+            >
+              <ForwardRef(Input)
+                classes={
+                  Object {
+                    "colorSecondary": "MuiInput-colorSecondary",
+                    "disabled": "Mui-disabled",
+                    "error": "Mui-error",
+                    "focused": "Mui-focused",
+                    "formControl": "MuiInput-formControl",
+                    "fullWidth": "MuiInput-fullWidth",
+                    "input": "MuiInput-input",
+                    "inputMarginDense": "MuiInput-inputMarginDense",
+                    "inputMultiline": "MuiInput-inputMultiline",
+                    "inputTypeSearch": "MuiInput-inputTypeSearch",
+                    "marginDense": "MuiInput-marginDense",
+                    "multiline": "MuiInput-multiline",
+                    "root": "MuiInput-root",
+                    "underline": "MuiInput-underline",
+                  }
+                }
+                inputComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "propTypes": Object {
+                      "IconComponent": [Function],
+                      "MenuProps": [Function],
+                      "SelectDisplayProps": [Function],
+                      "aria-label": [Function],
+                      "autoFocus": [Function],
+                      "autoWidth": [Function],
+                      "children": [Function],
+                      "className": [Function],
+                      "classes": [Function],
+                      "defaultValue": [Function],
+                      "disabled": [Function],
+                      "displayEmpty": [Function],
+                      "inputRef": [Function],
+                      "labelId": [Function],
+                      "multiple": [Function],
+                      "name": [Function],
+                      "onBlur": [Function],
+                      "onChange": [Function],
+                      "onClose": [Function],
+                      "onFocus": [Function],
+                      "onOpen": [Function],
+                      "open": [Function],
+                      "readOnly": [Function],
+                      "renderValue": [Function],
+                      "tabIndex": [Function],
+                      "type": [Function],
+                      "value": [Function],
+                      "variant": [Function],
+                    },
+                    "render": [Function],
+                  }
+                }
+                inputProps={
+                  Object {
+                    "IconComponent": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                    },
+                    "MenuProps": undefined,
+                    "SelectDisplayProps": Object {
+                      "id": undefined,
+                    },
+                    "autoWidth": false,
+                    "children": Array [
+                      <ForwardRef(WithStyles)
+                        value="AL"
+                      >
+                        Alabama
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="AK"
+                      >
+                        Alaska
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="AZ"
+                      >
+                        Arizona
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="AR"
+                      >
+                        Arkansas
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="CA"
+                      >
+                        California
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="CO"
+                      >
+                        Colorado
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="CT"
+                      >
+                        Connecticut
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="DE"
+                      >
+                        Delaware
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="DC"
+                      >
+                        District of Columbia
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="FL"
+                      >
+                        Florida
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="GA"
+                      >
+                        Georgia
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="HI"
+                      >
+                        Hawaii
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="ID"
+                      >
+                        Idaho
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="IL"
+                      >
+                        Illinois
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="IN"
+                      >
+                        Indiana
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="IA"
+                      >
+                        Iowa
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="KS"
+                      >
+                        Kansas
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="KY"
+                      >
+                        Kentucky
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="LA"
+                      >
+                        Louisiana
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="ME"
+                      >
+                        Maine
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="MD"
+                      >
+                        Maryland
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="MA"
+                      >
+                        Massachusetts
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="MI"
+                      >
+                        Michigan
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="MN"
+                      >
+                        Minnesota
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="MS"
+                      >
+                        Mississippi
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="MO"
+                      >
+                        Missouri
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="MT"
+                      >
+                        Montana
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="NE"
+                      >
+                        Nebraska
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="NV"
+                      >
+                        Nevada
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="NH"
+                      >
+                        New Hampshire
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="NJ"
+                      >
+                        New Jersey
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="NM"
+                      >
+                        New Mexico
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="NY"
+                      >
+                        New York
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="NC"
+                      >
+                        North Carolina
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="ND"
+                      >
+                        North Dakota
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="OH"
+                      >
+                        Ohio
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="OK"
+                      >
+                        Oklahoma
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="OR"
+                      >
+                        Oregon
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="PA"
+                      >
+                        Pennsylvania
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="RI"
+                      >
+                        Rhode Island
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="SC"
+                      >
+                        South Carolina
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="SD"
+                      >
+                        South Dakota
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="TN"
+                      >
+                        Tennessee
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="TX"
+                      >
+                        Texas
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="UT"
+                      >
+                        Utah
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="VT"
+                      >
+                        Vermont
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="VA"
+                      >
+                        Virginia
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="WA"
+                      >
+                        Washington
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="WI"
+                      >
+                        West Virginia
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="WV"
+                      >
+                        Wisconsin
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        value="WY"
+                      >
+                        Wyoming
+                      </ForwardRef(WithStyles)>,
+                    ],
+                    "classes": Object {
+                      "disabled": "Mui-disabled",
+                      "filled": "MuiSelect-filled",
+                      "icon": "MuiSelect-icon",
+                      "iconFilled": "MuiSelect-iconFilled",
+                      "iconOpen": "MuiSelect-iconOpen",
+                      "iconOutlined": "MuiSelect-iconOutlined",
+                      "nativeInput": "MuiSelect-nativeInput",
+                      "outlined": "MuiSelect-outlined",
+                      "root": "MuiSelect-root",
+                      "select": "MuiSelect-select",
+                      "selectMenu": "MuiSelect-selectMenu",
+                    },
+                    "displayEmpty": false,
+                    "labelId": undefined,
+                    "multiple": true,
+                    "onClose": undefined,
+                    "onOpen": undefined,
+                    "open": undefined,
+                    "renderValue": undefined,
+                    "type": undefined,
+                    "variant": "standard",
+                  }
+                }
+                onChange={[Function]}
+                value={
+                  Array [
+                    "AK",
+                    "AL",
+                  ]
+                }
+              >
+                <WithStyles(ForwardRef(InputBase))
+                  classes={
+                    Object {
+                      "colorSecondary": "MuiInput-colorSecondary",
+                      "disabled": "Mui-disabled",
+                      "error": "Mui-error",
+                      "focused": "Mui-focused",
+                      "formControl": "MuiInput-formControl",
+                      "fullWidth": "MuiInput-fullWidth",
+                      "input": "MuiInput-input",
+                      "inputMarginDense": "MuiInput-inputMarginDense",
+                      "inputMultiline": "MuiInput-inputMultiline",
+                      "inputTypeSearch": "MuiInput-inputTypeSearch",
+                      "marginDense": "MuiInput-marginDense",
+                      "multiline": "MuiInput-multiline",
+                      "root": "MuiInput-root MuiInput-underline",
+                      "underline": null,
+                    }
+                  }
+                  fullWidth={false}
+                  inputComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "propTypes": Object {
+                        "IconComponent": [Function],
+                        "MenuProps": [Function],
+                        "SelectDisplayProps": [Function],
+                        "aria-label": [Function],
+                        "autoFocus": [Function],
+                        "autoWidth": [Function],
+                        "children": [Function],
+                        "className": [Function],
+                        "classes": [Function],
+                        "defaultValue": [Function],
+                        "disabled": [Function],
+                        "displayEmpty": [Function],
+                        "inputRef": [Function],
+                        "labelId": [Function],
+                        "multiple": [Function],
+                        "name": [Function],
+                        "onBlur": [Function],
+                        "onChange": [Function],
+                        "onClose": [Function],
+                        "onFocus": [Function],
+                        "onOpen": [Function],
+                        "open": [Function],
+                        "readOnly": [Function],
+                        "renderValue": [Function],
+                        "tabIndex": [Function],
+                        "type": [Function],
+                        "value": [Function],
+                        "variant": [Function],
+                      },
+                      "render": [Function],
+                    }
+                  }
+                  inputProps={
+                    Object {
+                      "IconComponent": Object {
+                        "$$typeof": Symbol(react.memo),
+                        "compare": null,
+                        "type": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "render": [Function],
+                        },
+                      },
+                      "MenuProps": undefined,
+                      "SelectDisplayProps": Object {
+                        "id": undefined,
+                      },
+                      "autoWidth": false,
+                      "children": Array [
+                        <ForwardRef(WithStyles)
+                          value="AL"
+                        >
+                          Alabama
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="AK"
+                        >
+                          Alaska
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="AZ"
+                        >
+                          Arizona
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="AR"
+                        >
+                          Arkansas
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="CA"
+                        >
+                          California
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="CO"
+                        >
+                          Colorado
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="CT"
+                        >
+                          Connecticut
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="DE"
+                        >
+                          Delaware
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="DC"
+                        >
+                          District of Columbia
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="FL"
+                        >
+                          Florida
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="GA"
+                        >
+                          Georgia
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="HI"
+                        >
+                          Hawaii
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="ID"
+                        >
+                          Idaho
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="IL"
+                        >
+                          Illinois
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="IN"
+                        >
+                          Indiana
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="IA"
+                        >
+                          Iowa
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="KS"
+                        >
+                          Kansas
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="KY"
+                        >
+                          Kentucky
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="LA"
+                        >
+                          Louisiana
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="ME"
+                        >
+                          Maine
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="MD"
+                        >
+                          Maryland
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="MA"
+                        >
+                          Massachusetts
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="MI"
+                        >
+                          Michigan
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="MN"
+                        >
+                          Minnesota
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="MS"
+                        >
+                          Mississippi
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="MO"
+                        >
+                          Missouri
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="MT"
+                        >
+                          Montana
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="NE"
+                        >
+                          Nebraska
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="NV"
+                        >
+                          Nevada
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="NH"
+                        >
+                          New Hampshire
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="NJ"
+                        >
+                          New Jersey
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="NM"
+                        >
+                          New Mexico
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="NY"
+                        >
+                          New York
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="NC"
+                        >
+                          North Carolina
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="ND"
+                        >
+                          North Dakota
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="OH"
+                        >
+                          Ohio
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="OK"
+                        >
+                          Oklahoma
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="OR"
+                        >
+                          Oregon
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="PA"
+                        >
+                          Pennsylvania
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="RI"
+                        >
+                          Rhode Island
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="SC"
+                        >
+                          South Carolina
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="SD"
+                        >
+                          South Dakota
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="TN"
+                        >
+                          Tennessee
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="TX"
+                        >
+                          Texas
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="UT"
+                        >
+                          Utah
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="VT"
+                        >
+                          Vermont
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="VA"
+                        >
+                          Virginia
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="WA"
+                        >
+                          Washington
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="WI"
+                        >
+                          West Virginia
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="WV"
+                        >
+                          Wisconsin
+                        </ForwardRef(WithStyles)>,
+                        <ForwardRef(WithStyles)
+                          value="WY"
+                        >
+                          Wyoming
+                        </ForwardRef(WithStyles)>,
+                      ],
+                      "classes": Object {
+                        "disabled": "Mui-disabled",
+                        "filled": "MuiSelect-filled",
+                        "icon": "MuiSelect-icon",
+                        "iconFilled": "MuiSelect-iconFilled",
+                        "iconOpen": "MuiSelect-iconOpen",
+                        "iconOutlined": "MuiSelect-iconOutlined",
+                        "nativeInput": "MuiSelect-nativeInput",
+                        "outlined": "MuiSelect-outlined",
+                        "root": "MuiSelect-root",
+                        "select": "MuiSelect-select",
+                        "selectMenu": "MuiSelect-selectMenu",
+                      },
+                      "displayEmpty": false,
+                      "labelId": undefined,
+                      "multiple": true,
+                      "onClose": undefined,
+                      "onOpen": undefined,
+                      "open": undefined,
+                      "renderValue": undefined,
+                      "type": undefined,
+                      "variant": "standard",
+                    }
+                  }
+                  multiline={false}
+                  onChange={[Function]}
+                  type="text"
+                  value={
+                    Array [
+                      "AK",
+                      "AL",
+                    ]
+                  }
+                >
+                  <ForwardRef(InputBase)
+                    classes={
+                      Object {
+                        "adornedEnd": "MuiInputBase-adornedEnd",
+                        "adornedStart": "MuiInputBase-adornedStart",
+                        "colorSecondary": "MuiInputBase-colorSecondary MuiInput-colorSecondary",
+                        "disabled": "Mui-disabled Mui-disabled",
+                        "error": "Mui-error Mui-error",
+                        "focused": "Mui-focused Mui-focused",
+                        "formControl": "MuiInputBase-formControl MuiInput-formControl",
+                        "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
+                        "input": "MuiInputBase-input MuiInput-input",
+                        "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+                        "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+                        "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
+                        "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
+                        "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
+                        "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
+                        "marginDense": "MuiInputBase-marginDense MuiInput-marginDense",
+                        "multiline": "MuiInputBase-multiline MuiInput-multiline",
+                        "root": "MuiInputBase-root MuiInput-root MuiInput-underline",
+                      }
+                    }
+                    fullWidth={false}
+                    inputComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "propTypes": Object {
+                          "IconComponent": [Function],
+                          "MenuProps": [Function],
+                          "SelectDisplayProps": [Function],
+                          "aria-label": [Function],
+                          "autoFocus": [Function],
+                          "autoWidth": [Function],
+                          "children": [Function],
+                          "className": [Function],
+                          "classes": [Function],
+                          "defaultValue": [Function],
+                          "disabled": [Function],
+                          "displayEmpty": [Function],
+                          "inputRef": [Function],
+                          "labelId": [Function],
+                          "multiple": [Function],
+                          "name": [Function],
+                          "onBlur": [Function],
+                          "onChange": [Function],
+                          "onClose": [Function],
+                          "onFocus": [Function],
+                          "onOpen": [Function],
+                          "open": [Function],
+                          "readOnly": [Function],
+                          "renderValue": [Function],
+                          "tabIndex": [Function],
+                          "type": [Function],
+                          "value": [Function],
+                          "variant": [Function],
+                        },
+                        "render": [Function],
+                      }
+                    }
+                    inputProps={
+                      Object {
+                        "IconComponent": Object {
+                          "$$typeof": Symbol(react.memo),
+                          "compare": null,
+                          "type": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "render": [Function],
+                          },
+                        },
+                        "MenuProps": undefined,
+                        "SelectDisplayProps": Object {
+                          "id": undefined,
+                        },
+                        "autoWidth": false,
+                        "children": Array [
+                          <ForwardRef(WithStyles)
+                            value="AL"
+                          >
+                            Alabama
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="AK"
+                          >
+                            Alaska
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="AZ"
+                          >
+                            Arizona
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="AR"
+                          >
+                            Arkansas
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="CA"
+                          >
+                            California
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="CO"
+                          >
+                            Colorado
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="CT"
+                          >
+                            Connecticut
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="DE"
+                          >
+                            Delaware
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="DC"
+                          >
+                            District of Columbia
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="FL"
+                          >
+                            Florida
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="GA"
+                          >
+                            Georgia
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="HI"
+                          >
+                            Hawaii
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="ID"
+                          >
+                            Idaho
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="IL"
+                          >
+                            Illinois
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="IN"
+                          >
+                            Indiana
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="IA"
+                          >
+                            Iowa
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="KS"
+                          >
+                            Kansas
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="KY"
+                          >
+                            Kentucky
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="LA"
+                          >
+                            Louisiana
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="ME"
+                          >
+                            Maine
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="MD"
+                          >
+                            Maryland
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="MA"
+                          >
+                            Massachusetts
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="MI"
+                          >
+                            Michigan
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="MN"
+                          >
+                            Minnesota
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="MS"
+                          >
+                            Mississippi
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="MO"
+                          >
+                            Missouri
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="MT"
+                          >
+                            Montana
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="NE"
+                          >
+                            Nebraska
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="NV"
+                          >
+                            Nevada
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="NH"
+                          >
+                            New Hampshire
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="NJ"
+                          >
+                            New Jersey
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="NM"
+                          >
+                            New Mexico
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="NY"
+                          >
+                            New York
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="NC"
+                          >
+                            North Carolina
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="ND"
+                          >
+                            North Dakota
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="OH"
+                          >
+                            Ohio
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="OK"
+                          >
+                            Oklahoma
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="OR"
+                          >
+                            Oregon
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="PA"
+                          >
+                            Pennsylvania
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="RI"
+                          >
+                            Rhode Island
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="SC"
+                          >
+                            South Carolina
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="SD"
+                          >
+                            South Dakota
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="TN"
+                          >
+                            Tennessee
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="TX"
+                          >
+                            Texas
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="UT"
+                          >
+                            Utah
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="VT"
+                          >
+                            Vermont
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="VA"
+                          >
+                            Virginia
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="WA"
+                          >
+                            Washington
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="WI"
+                          >
+                            West Virginia
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="WV"
+                          >
+                            Wisconsin
+                          </ForwardRef(WithStyles)>,
+                          <ForwardRef(WithStyles)
+                            value="WY"
+                          >
+                            Wyoming
+                          </ForwardRef(WithStyles)>,
+                        ],
+                        "classes": Object {
+                          "disabled": "Mui-disabled",
+                          "filled": "MuiSelect-filled",
+                          "icon": "MuiSelect-icon",
+                          "iconFilled": "MuiSelect-iconFilled",
+                          "iconOpen": "MuiSelect-iconOpen",
+                          "iconOutlined": "MuiSelect-iconOutlined",
+                          "nativeInput": "MuiSelect-nativeInput",
+                          "outlined": "MuiSelect-outlined",
+                          "root": "MuiSelect-root",
+                          "select": "MuiSelect-select",
+                          "selectMenu": "MuiSelect-selectMenu",
+                        },
+                        "displayEmpty": false,
+                        "labelId": undefined,
+                        "multiple": true,
+                        "onClose": undefined,
+                        "onOpen": undefined,
+                        "open": undefined,
+                        "renderValue": undefined,
+                        "type": undefined,
+                        "variant": "standard",
+                      }
+                    }
+                    multiline={false}
+                    onChange={[Function]}
+                    type="text"
+                    value={
+                      Array [
+                        "AK",
+                        "AL",
+                      ]
+                    }
+                  >
+                    <div
+                      className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                      onClick={[Function]}
+                    >
+                      <ForwardRef(SelectInput)
+                        IconComponent={
+                          Object {
+                            "$$typeof": Symbol(react.memo),
+                            "compare": null,
+                            "type": Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "render": [Function],
+                            },
+                          }
+                        }
+                        SelectDisplayProps={
+                          Object {
+                            "id": undefined,
+                          }
+                        }
+                        aria-invalid={false}
+                        autoWidth={false}
+                        className="MuiInputBase-input MuiInput-input"
+                        classes={
+                          Object {
+                            "disabled": "Mui-disabled",
+                            "filled": "MuiSelect-filled",
+                            "icon": "MuiSelect-icon",
+                            "iconFilled": "MuiSelect-iconFilled",
+                            "iconOpen": "MuiSelect-iconOpen",
+                            "iconOutlined": "MuiSelect-iconOutlined",
+                            "nativeInput": "MuiSelect-nativeInput",
+                            "outlined": "MuiSelect-outlined",
+                            "root": "MuiSelect-root",
+                            "select": "MuiSelect-select",
+                            "selectMenu": "MuiSelect-selectMenu",
+                          }
+                        }
+                        disabled={false}
+                        displayEmpty={false}
+                        inputRef={[Function]}
+                        multiple={true}
+                        onAnimationStart={[Function]}
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        required={false}
+                        value={
+                          Array [
+                            "AK",
+                            "AL",
+                          ]
+                        }
+                        variant="standard"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
+                          onMouseDown={[Function]}
+                          role="button"
+                          tabIndex={0}
+                        >
+                          Alabama, Alaska
+                        </div>
+                        <input
+                          aria-hidden={true}
+                          className="MuiSelect-nativeInput"
+                          onAnimationStart={[Function]}
+                          onChange={[Function]}
+                          required={false}
+                          tabIndex={-1}
+                          value="AK,AL"
+                        />
+                        <ForwardRef(ArrowDropDownIcon)
+                          className="MuiSelect-icon"
+                        >
+                          <WithStyles(ForwardRef(SvgIcon))
+                            className="MuiSelect-icon"
+                          >
+                            <ForwardRef(SvgIcon)
+                              className="MuiSelect-icon"
+                              classes={
+                                Object {
+                                  "colorAction": "MuiSvgIcon-colorAction",
+                                  "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                  "colorError": "MuiSvgIcon-colorError",
+                                  "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                  "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                  "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                  "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                  "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                  "root": "MuiSvgIcon-root",
+                                }
+                              }
+                            >
+                              <svg
+                                aria-hidden={true}
+                                className="MuiSvgIcon-root MuiSelect-icon"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M7 10l5 5 5-5z"
+                                />
+                              </svg>
+                            </ForwardRef(SvgIcon)>
+                          </WithStyles(ForwardRef(SvgIcon))>
+                        </ForwardRef(ArrowDropDownIcon)>
+                        <WithStyles(ForwardRef(Menu))
+                          MenuListProps={
+                            Object {
+                              "aria-labelledby": undefined,
+                              "disableListWrap": true,
+                              "role": "listbox",
+                            }
+                          }
+                          PaperProps={
+                            Object {
+                              "style": Object {
+                                "minWidth": undefined,
+                              },
+                            }
+                          }
+                          anchorEl={
+                            <div
+                              aria-haspopup="listbox"
+                              class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+                              role="button"
+                              tabindex="0"
+                            >
+                              Alabama, Alaska
+                            </div>
+                          }
+                          id="menu-"
+                          onClose={[Function]}
+                          open={false}
+                        >
+                          <ForwardRef(Menu)
+                            MenuListProps={
+                              Object {
+                                "aria-labelledby": undefined,
+                                "disableListWrap": true,
+                                "role": "listbox",
+                              }
+                            }
+                            PaperProps={
+                              Object {
+                                "style": Object {
+                                  "minWidth": undefined,
+                                },
+                              }
+                            }
+                            anchorEl={
+                              <div
+                                aria-haspopup="listbox"
+                                class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+                                role="button"
+                                tabindex="0"
+                              >
+                                Alabama, Alaska
+                              </div>
+                            }
+                            classes={
+                              Object {
+                                "list": "MuiMenu-list",
+                                "paper": "MuiMenu-paper",
+                              }
+                            }
+                            id="menu-"
+                            onClose={[Function]}
+                            open={false}
+                          >
+                            <WithStyles(ForwardRef(Popover))
+                              PaperProps={
+                                Object {
+                                  "classes": Object {
+                                    "root": "MuiMenu-paper",
+                                  },
+                                  "style": Object {
+                                    "minWidth": undefined,
+                                  },
+                                }
+                              }
+                              anchorEl={
+                                <div
+                                  aria-haspopup="listbox"
+                                  class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+                                  role="button"
+                                  tabindex="0"
+                                >
+                                  Alabama, Alaska
+                                </div>
+                              }
+                              anchorOrigin={
+                                Object {
+                                  "horizontal": "left",
+                                  "vertical": "top",
+                                }
+                              }
+                              getContentAnchorEl={[Function]}
+                              id="menu-"
+                              onClose={[Function]}
+                              onEntering={[Function]}
+                              open={false}
+                              transformOrigin={
+                                Object {
+                                  "horizontal": "left",
+                                  "vertical": "top",
+                                }
+                              }
+                              transitionDuration="auto"
+                            >
+                              <ForwardRef(Popover)
+                                PaperProps={
+                                  Object {
+                                    "classes": Object {
+                                      "root": "MuiMenu-paper",
+                                    },
+                                    "style": Object {
+                                      "minWidth": undefined,
+                                    },
+                                  }
+                                }
+                                anchorEl={
+                                  <div
+                                    aria-haspopup="listbox"
+                                    class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+                                    role="button"
+                                    tabindex="0"
+                                  >
+                                    Alabama, Alaska
+                                  </div>
+                                }
+                                anchorOrigin={
+                                  Object {
+                                    "horizontal": "left",
+                                    "vertical": "top",
+                                  }
+                                }
+                                classes={
+                                  Object {
+                                    "paper": "MuiPopover-paper",
+                                    "root": "MuiPopover-root",
+                                  }
+                                }
+                                getContentAnchorEl={[Function]}
+                                id="menu-"
+                                onClose={[Function]}
+                                onEntering={[Function]}
+                                open={false}
+                                transformOrigin={
+                                  Object {
+                                    "horizontal": "left",
+                                    "vertical": "top",
+                                  }
+                                }
+                                transitionDuration="auto"
+                              >
+                                <ForwardRef(Modal)
+                                  BackdropProps={
+                                    Object {
+                                      "invisible": true,
+                                    }
+                                  }
+                                  className="MuiPopover-root"
+                                  container={<body />}
+                                  id="menu-"
+                                  onClose={[Function]}
+                                  open={false}
+                                />
+                              </ForwardRef(Popover)>
+                            </WithStyles(ForwardRef(Popover))>
+                          </ForwardRef(Menu)>
+                        </WithStyles(ForwardRef(Menu))>
+                      </ForwardRef(SelectInput)>
+                    </div>
+                  </ForwardRef(InputBase)>
+                </WithStyles(ForwardRef(InputBase))>
+              </ForwardRef(Input)>
+            </WithStyles(ForwardRef(Input))>
+          </ForwardRef(Select)>
+        </WithStyles(ForwardRef(Select))>
+      </div>
+    </ForwardRef(FormControl)>
+  </WithStyles(ForwardRef(FormControl))>
+  <WithStyles(ForwardRef(FormControl))
+    className="makeStyles-formControl-2"
+  >
+    <ForwardRef(FormControl)
+      className="makeStyles-formControl-2"
+      classes={
+        Object {
+          "fullWidth": "MuiFormControl-fullWidth",
+          "marginDense": "MuiFormControl-marginDense",
+          "marginNormal": "MuiFormControl-marginNormal",
+          "root": "MuiFormControl-root",
+        }
+      }
+    >
+      <div
+        className="MuiFormControl-root makeStyles-formControl-2"
+      >
+        <WithStyles(ForwardRef(TextField))
+          InputLabelProps={
+            Object {
+              "shrink": true,
+            }
+          }
+          label="Start"
+          onChange={[Function]}
+          type="date"
+          value="2020-09-01"
+        >
+          <ForwardRef(TextField)
+            InputLabelProps={
+              Object {
+                "shrink": true,
+              }
+            }
+            classes={
+              Object {
+                "root": "MuiTextField-root",
+              }
+            }
+            label="Start"
+            onChange={[Function]}
+            type="date"
+            value="2020-09-01"
+          >
+            <WithStyles(ForwardRef(FormControl))
+              className="MuiTextField-root"
+              color="primary"
+              disabled={false}
+              error={false}
+              fullWidth={false}
+              required={false}
+              variant="standard"
+            >
+              <ForwardRef(FormControl)
+                className="MuiTextField-root"
+                classes={
+                  Object {
+                    "fullWidth": "MuiFormControl-fullWidth",
+                    "marginDense": "MuiFormControl-marginDense",
+                    "marginNormal": "MuiFormControl-marginNormal",
+                    "root": "MuiFormControl-root",
+                  }
+                }
+                color="primary"
+                disabled={false}
+                error={false}
+                fullWidth={false}
+                required={false}
+                variant="standard"
+              >
+                <div
+                  className="MuiFormControl-root MuiTextField-root"
+                >
+                  <WithStyles(ForwardRef(InputLabel))
+                    shrink={true}
+                  >
+                    <ForwardRef(InputLabel)
+                      classes={
+                        Object {
+                          "animated": "MuiInputLabel-animated",
+                          "asterisk": "MuiInputLabel-asterisk",
+                          "disabled": "Mui-disabled",
+                          "error": "Mui-error",
+                          "filled": "MuiInputLabel-filled",
+                          "focused": "Mui-focused",
+                          "formControl": "MuiInputLabel-formControl",
+                          "marginDense": "MuiInputLabel-marginDense",
+                          "outlined": "MuiInputLabel-outlined",
+                          "required": "Mui-required",
+                          "root": "MuiInputLabel-root",
+                          "shrink": "MuiInputLabel-shrink",
+                        }
+                      }
+                      shrink={true}
+                    >
+                      <WithStyles(ForwardRef(FormLabel))
+                        className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                        classes={
+                          Object {
+                            "asterisk": "MuiInputLabel-asterisk",
+                            "disabled": "Mui-disabled",
+                            "error": "Mui-error",
+                            "focused": "Mui-focused",
+                            "required": "Mui-required",
+                          }
+                        }
+                        data-shrink={true}
+                      >
+                        <ForwardRef(FormLabel)
+                          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                          classes={
+                            Object {
+                              "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
+                              "colorSecondary": "MuiFormLabel-colorSecondary",
+                              "disabled": "Mui-disabled Mui-disabled",
+                              "error": "Mui-error Mui-error",
+                              "filled": "MuiFormLabel-filled",
+                              "focused": "Mui-focused Mui-focused",
+                              "required": "Mui-required Mui-required",
+                              "root": "MuiFormLabel-root",
+                            }
+                          }
+                          data-shrink={true}
+                        >
+                          <label
+                            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+                            data-shrink={true}
+                          >
+                            Start
+                          </label>
+                        </ForwardRef(FormLabel)>
+                      </WithStyles(ForwardRef(FormLabel))>
+                    </ForwardRef(InputLabel)>
+                  </WithStyles(ForwardRef(InputLabel))>
+                  <WithStyles(ForwardRef(Input))
+                    autoFocus={false}
+                    fullWidth={false}
+                    multiline={false}
+                    onChange={[Function]}
+                    type="date"
+                    value="2020-09-01"
+                  >
+                    <ForwardRef(Input)
+                      autoFocus={false}
+                      classes={
+                        Object {
+                          "colorSecondary": "MuiInput-colorSecondary",
+                          "disabled": "Mui-disabled",
+                          "error": "Mui-error",
+                          "focused": "Mui-focused",
+                          "formControl": "MuiInput-formControl",
+                          "fullWidth": "MuiInput-fullWidth",
+                          "input": "MuiInput-input",
+                          "inputMarginDense": "MuiInput-inputMarginDense",
+                          "inputMultiline": "MuiInput-inputMultiline",
+                          "inputTypeSearch": "MuiInput-inputTypeSearch",
+                          "marginDense": "MuiInput-marginDense",
+                          "multiline": "MuiInput-multiline",
+                          "root": "MuiInput-root",
+                          "underline": "MuiInput-underline",
+                        }
+                      }
+                      fullWidth={false}
+                      multiline={false}
+                      onChange={[Function]}
+                      type="date"
+                      value="2020-09-01"
+                    >
+                      <WithStyles(ForwardRef(InputBase))
+                        autoFocus={false}
+                        classes={
+                          Object {
+                            "colorSecondary": "MuiInput-colorSecondary",
+                            "disabled": "Mui-disabled",
+                            "error": "Mui-error",
+                            "focused": "Mui-focused",
+                            "formControl": "MuiInput-formControl",
+                            "fullWidth": "MuiInput-fullWidth",
+                            "input": "MuiInput-input",
+                            "inputMarginDense": "MuiInput-inputMarginDense",
+                            "inputMultiline": "MuiInput-inputMultiline",
+                            "inputTypeSearch": "MuiInput-inputTypeSearch",
+                            "marginDense": "MuiInput-marginDense",
+                            "multiline": "MuiInput-multiline",
+                            "root": "MuiInput-root MuiInput-underline",
+                            "underline": null,
+                          }
+                        }
+                        fullWidth={false}
+                        inputComponent="input"
+                        multiline={false}
+                        onChange={[Function]}
+                        type="date"
+                        value="2020-09-01"
+                      >
+                        <ForwardRef(InputBase)
+                          autoFocus={false}
+                          classes={
+                            Object {
+                              "adornedEnd": "MuiInputBase-adornedEnd",
+                              "adornedStart": "MuiInputBase-adornedStart",
+                              "colorSecondary": "MuiInputBase-colorSecondary MuiInput-colorSecondary",
+                              "disabled": "Mui-disabled Mui-disabled",
+                              "error": "Mui-error Mui-error",
+                              "focused": "Mui-focused Mui-focused",
+                              "formControl": "MuiInputBase-formControl MuiInput-formControl",
+                              "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
+                              "input": "MuiInputBase-input MuiInput-input",
+                              "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+                              "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+                              "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
+                              "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
+                              "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
+                              "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
+                              "marginDense": "MuiInputBase-marginDense MuiInput-marginDense",
+                              "multiline": "MuiInputBase-multiline MuiInput-multiline",
+                              "root": "MuiInputBase-root MuiInput-root MuiInput-underline",
+                            }
+                          }
+                          fullWidth={false}
+                          inputComponent="input"
+                          multiline={false}
+                          onChange={[Function]}
+                          type="date"
+                          value="2020-09-01"
+                        >
+                          <div
+                            className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                            onClick={[Function]}
+                          >
+                            <input
+                              aria-invalid={false}
+                              autoFocus={false}
+                              className="MuiInputBase-input MuiInput-input"
+                              disabled={false}
+                              onAnimationStart={[Function]}
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              onFocus={[Function]}
+                              required={false}
+                              type="date"
+                              value="2020-09-01"
+                            />
+                          </div>
+                        </ForwardRef(InputBase)>
+                      </WithStyles(ForwardRef(InputBase))>
+                    </ForwardRef(Input)>
+                  </WithStyles(ForwardRef(Input))>
+                </div>
+              </ForwardRef(FormControl)>
+            </WithStyles(ForwardRef(FormControl))>
+          </ForwardRef(TextField)>
+        </WithStyles(ForwardRef(TextField))>
+      </div>
+    </ForwardRef(FormControl)>
+  </WithStyles(ForwardRef(FormControl))>
+  <WithStyles(ForwardRef(FormControl))
+    className="makeStyles-formControl-2"
+  >
+    <ForwardRef(FormControl)
+      className="makeStyles-formControl-2"
+      classes={
+        Object {
+          "fullWidth": "MuiFormControl-fullWidth",
+          "marginDense": "MuiFormControl-marginDense",
+          "marginNormal": "MuiFormControl-marginNormal",
+          "root": "MuiFormControl-root",
+        }
+      }
+    >
+      <div
+        className="MuiFormControl-root makeStyles-formControl-2"
+      >
+        <WithStyles(ForwardRef(TextField))
+          InputLabelProps={
+            Object {
+              "shrink": true,
+            }
+          }
+          label="End"
+          onChange={[Function]}
+          type="date"
+          value="2020-10-31"
+        >
+          <ForwardRef(TextField)
+            InputLabelProps={
+              Object {
+                "shrink": true,
+              }
+            }
+            classes={
+              Object {
+                "root": "MuiTextField-root",
+              }
+            }
+            label="End"
+            onChange={[Function]}
+            type="date"
+            value="2020-10-31"
+          >
+            <WithStyles(ForwardRef(FormControl))
+              className="MuiTextField-root"
+              color="primary"
+              disabled={false}
+              error={false}
+              fullWidth={false}
+              required={false}
+              variant="standard"
+            >
+              <ForwardRef(FormControl)
+                className="MuiTextField-root"
+                classes={
+                  Object {
+                    "fullWidth": "MuiFormControl-fullWidth",
+                    "marginDense": "MuiFormControl-marginDense",
+                    "marginNormal": "MuiFormControl-marginNormal",
+                    "root": "MuiFormControl-root",
+                  }
+                }
+                color="primary"
+                disabled={false}
+                error={false}
+                fullWidth={false}
+                required={false}
+                variant="standard"
+              >
+                <div
+                  className="MuiFormControl-root MuiTextField-root"
+                >
+                  <WithStyles(ForwardRef(InputLabel))
+                    shrink={true}
+                  >
+                    <ForwardRef(InputLabel)
+                      classes={
+                        Object {
+                          "animated": "MuiInputLabel-animated",
+                          "asterisk": "MuiInputLabel-asterisk",
+                          "disabled": "Mui-disabled",
+                          "error": "Mui-error",
+                          "filled": "MuiInputLabel-filled",
+                          "focused": "Mui-focused",
+                          "formControl": "MuiInputLabel-formControl",
+                          "marginDense": "MuiInputLabel-marginDense",
+                          "outlined": "MuiInputLabel-outlined",
+                          "required": "Mui-required",
+                          "root": "MuiInputLabel-root",
+                          "shrink": "MuiInputLabel-shrink",
+                        }
+                      }
+                      shrink={true}
+                    >
+                      <WithStyles(ForwardRef(FormLabel))
+                        className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                        classes={
+                          Object {
+                            "asterisk": "MuiInputLabel-asterisk",
+                            "disabled": "Mui-disabled",
+                            "error": "Mui-error",
+                            "focused": "Mui-focused",
+                            "required": "Mui-required",
+                          }
+                        }
+                        data-shrink={true}
+                      >
+                        <ForwardRef(FormLabel)
+                          className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+                          classes={
+                            Object {
+                              "asterisk": "MuiFormLabel-asterisk MuiInputLabel-asterisk",
+                              "colorSecondary": "MuiFormLabel-colorSecondary",
+                              "disabled": "Mui-disabled Mui-disabled",
+                              "error": "Mui-error Mui-error",
+                              "filled": "MuiFormLabel-filled",
+                              "focused": "Mui-focused Mui-focused",
+                              "required": "Mui-required Mui-required",
+                              "root": "MuiFormLabel-root",
+                            }
+                          }
+                          data-shrink={true}
+                        >
+                          <label
+                            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+                            data-shrink={true}
+                          >
+                            End
+                          </label>
+                        </ForwardRef(FormLabel)>
+                      </WithStyles(ForwardRef(FormLabel))>
+                    </ForwardRef(InputLabel)>
+                  </WithStyles(ForwardRef(InputLabel))>
+                  <WithStyles(ForwardRef(Input))
+                    autoFocus={false}
+                    fullWidth={false}
+                    multiline={false}
+                    onChange={[Function]}
+                    type="date"
+                    value="2020-10-31"
+                  >
+                    <ForwardRef(Input)
+                      autoFocus={false}
+                      classes={
+                        Object {
+                          "colorSecondary": "MuiInput-colorSecondary",
+                          "disabled": "Mui-disabled",
+                          "error": "Mui-error",
+                          "focused": "Mui-focused",
+                          "formControl": "MuiInput-formControl",
+                          "fullWidth": "MuiInput-fullWidth",
+                          "input": "MuiInput-input",
+                          "inputMarginDense": "MuiInput-inputMarginDense",
+                          "inputMultiline": "MuiInput-inputMultiline",
+                          "inputTypeSearch": "MuiInput-inputTypeSearch",
+                          "marginDense": "MuiInput-marginDense",
+                          "multiline": "MuiInput-multiline",
+                          "root": "MuiInput-root",
+                          "underline": "MuiInput-underline",
+                        }
+                      }
+                      fullWidth={false}
+                      multiline={false}
+                      onChange={[Function]}
+                      type="date"
+                      value="2020-10-31"
+                    >
+                      <WithStyles(ForwardRef(InputBase))
+                        autoFocus={false}
+                        classes={
+                          Object {
+                            "colorSecondary": "MuiInput-colorSecondary",
+                            "disabled": "Mui-disabled",
+                            "error": "Mui-error",
+                            "focused": "Mui-focused",
+                            "formControl": "MuiInput-formControl",
+                            "fullWidth": "MuiInput-fullWidth",
+                            "input": "MuiInput-input",
+                            "inputMarginDense": "MuiInput-inputMarginDense",
+                            "inputMultiline": "MuiInput-inputMultiline",
+                            "inputTypeSearch": "MuiInput-inputTypeSearch",
+                            "marginDense": "MuiInput-marginDense",
+                            "multiline": "MuiInput-multiline",
+                            "root": "MuiInput-root MuiInput-underline",
+                            "underline": null,
+                          }
+                        }
+                        fullWidth={false}
+                        inputComponent="input"
+                        multiline={false}
+                        onChange={[Function]}
+                        type="date"
+                        value="2020-10-31"
+                      >
+                        <ForwardRef(InputBase)
+                          autoFocus={false}
+                          classes={
+                            Object {
+                              "adornedEnd": "MuiInputBase-adornedEnd",
+                              "adornedStart": "MuiInputBase-adornedStart",
+                              "colorSecondary": "MuiInputBase-colorSecondary MuiInput-colorSecondary",
+                              "disabled": "Mui-disabled Mui-disabled",
+                              "error": "Mui-error Mui-error",
+                              "focused": "Mui-focused Mui-focused",
+                              "formControl": "MuiInputBase-formControl MuiInput-formControl",
+                              "fullWidth": "MuiInputBase-fullWidth MuiInput-fullWidth",
+                              "input": "MuiInputBase-input MuiInput-input",
+                              "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+                              "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+                              "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
+                              "inputMarginDense": "MuiInputBase-inputMarginDense MuiInput-inputMarginDense",
+                              "inputMultiline": "MuiInputBase-inputMultiline MuiInput-inputMultiline",
+                              "inputTypeSearch": "MuiInputBase-inputTypeSearch MuiInput-inputTypeSearch",
+                              "marginDense": "MuiInputBase-marginDense MuiInput-marginDense",
+                              "multiline": "MuiInputBase-multiline MuiInput-multiline",
+                              "root": "MuiInputBase-root MuiInput-root MuiInput-underline",
+                            }
+                          }
+                          fullWidth={false}
+                          inputComponent="input"
+                          multiline={false}
+                          onChange={[Function]}
+                          type="date"
+                          value="2020-10-31"
+                        >
+                          <div
+                            className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                            onClick={[Function]}
+                          >
+                            <input
+                              aria-invalid={false}
+                              autoFocus={false}
+                              className="MuiInputBase-input MuiInput-input"
+                              disabled={false}
+                              onAnimationStart={[Function]}
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              onFocus={[Function]}
+                              required={false}
+                              type="date"
+                              value="2020-10-31"
+                            />
+                          </div>
+                        </ForwardRef(InputBase)>
+                      </WithStyles(ForwardRef(InputBase))>
+                    </ForwardRef(Input)>
+                  </WithStyles(ForwardRef(Input))>
+                </div>
+              </ForwardRef(FormControl)>
+            </WithStyles(ForwardRef(FormControl))>
+          </ForwardRef(TextField)>
+        </WithStyles(ForwardRef(TextField))>
+      </div>
+    </ForwardRef(FormControl)>
+  </WithStyles(ForwardRef(FormControl))>
+</Filter>
+`;

@@ -73,8 +73,8 @@ const useStyles = makeStyles(theme => ({
 const Dashboard = () => {
   const classes = useStyles()
 
-  const [states, setStates] = useState(['AL'])
-  const [dates, setDates] = useState({ start: '2020-09-01', end: '' })
+  const [states, setStates] = useState([])
+  const [dates, setDates] = useState({ start: '', end: '' })
 
   const trips = useSelector(selectTrips)
   const loading = useSelector(selectLoading)
@@ -83,10 +83,6 @@ const Dashboard = () => {
 
   function handleFetchData() {
     const { start, end } = dates
-
-    if (!states && !start && !end) {
-      return
-    }
 
     const params = pickBy({ states: states.join(','), start, end }, identity)
 

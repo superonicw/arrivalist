@@ -75,7 +75,7 @@ const LineChart = ({ trips }) => {
   const margin = { top: 30, bottom: 80, left: 50, right: 30 }
 
   function renderChart() {
-    if (!data || !viewport.width || !viewport.height) {
+    if (!data) {
       return null
     }
 

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip test renders correctly 1`] = `
+<Tooltip
+  state="AL"
+  x="2020-09-01"
+  y="12000"
+>
+  <div
+    className="makeStyles-tooltip-1"
+  >
+    <div>
+      <b>
+        AL
+      </b>
+    </div>
+    <div>
+      Sep 1st
+      : 
+      <b>
+        12,000
+      </b>
+    </div>
+  </div>
+</Tooltip>
+`;

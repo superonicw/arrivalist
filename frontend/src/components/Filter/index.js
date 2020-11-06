@@ -21,7 +21,7 @@ const Filter = ({ states, dates, onStatesChange, onDatesChange }) => {
   const classes = useStyles()
 
   return (
-    <React.Fragment>
+    <>
       <FormControl className={classes.formControl}>
         <InputLabel shrink>State</InputLabel>
         <Select
@@ -60,7 +60,7 @@ const Filter = ({ states, dates, onStatesChange, onDatesChange }) => {
           onChange={evt => onDatesChange({ ...dates, end: evt.target.value })}
         />
       </FormControl>
-    </React.Fragment>
+    </>
   )
 }
 

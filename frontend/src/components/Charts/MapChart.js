@@ -64,7 +64,7 @@ const MapChart = ({ trips }) => {
                       state &&
                       setTooltipContent(
                         `${geo.properties.name}: ${numeral(
-                          data[state.abbr] || 0,
+                          data[state.abbr],
                         ).format('0,0')}`,
                       )
                   }}

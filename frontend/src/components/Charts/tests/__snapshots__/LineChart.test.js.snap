@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LineChart test renders correctly 1`] = `
+<div
+  className="linechart"
+>
+  <LineChart
+    barPadding={0.5}
+    colorScale={[Function]}
+    customPointColor="blue"
+    customPointShape="circle"
+    data={
+      Array [
+        Object {
+          "key": "AK",
+          "values": Array [
+            Object {
+              "state": "Alaska",
+              "x": 1598918400000,
+              "y": 1657,
+            },
+            Object {
+              "state": "Alaska",
+              "x": 1599004800000,
+              "y": 1472,
+            },
+            Object {
+              "state": "Alaska",
+              "x": 1599091200000,
+              "y": 2400,
+            },
+            Object {
+              "state": "Alaska",
+              "x": 1599177600000,
+              "y": 7212,
+            },
+            Object {
+              "state": "Alaska",
+              "x": 1599264000000,
+              "y": 4976,
+            },
+            Object {
+              "state": "Alaska",
+              "x": 1599350400000,
+              "y": 2166,
+            },
+            Object {
+              "state": "Alaska",
+              "x": 1599436800000,
+              "y": 1099,
+            },
+            Object {
+              "state": "Alaska",
+              "x": 1599523200000,
+              "y": 1317,
+            },
+            Object {
+              "state": "Alaska",
+              "x": 1599609600000,
+              "y": 1678,
+            },
+          ],
+        },
+        Object {
+          "key": "AL",
+          "values": Array [
+            Object {
+              "state": "Alabama",
+              "x": 1598918400000,
+              "y": 22010,
+            },
+            Object {
+              "state": "Alabama",
+              "x": 1599004800000,
+              "y": 23263,
+            },
+            Object {
+              "state": "Alabama",
+              "x": 1599091200000,
+              "y": 34660,
+            },
+            Object {
+              "state": "Alabama",
+              "x": 1599177600000,
+              "y": 71158,
+            },
+            Object {
+              "state": "Alabama",
+              "x": 1599264000000,
+              "y": 54976,
+            },
+            Object {
+              "state": "Alabama",
+              "x": 1599350400000,
+              "y": 27697,
+            },
+            Object {
+              "state": "Alabama",
+              "x": 1599436800000,
+              "y": 20603,
+            },
+            Object {
+              "state": "Alabama",
+              "x": 1599523200000,
+              "y": 23859,
+            },
+            Object {
+              "state": "Alabama",
+              "x": 1599609600000,
+              "y": 23616,
+            },
+          ],
+        },
+      ]
+    }
+    defined={[Function]}
+    height={0}
+    interpolate="linear"
+    label={[Function]}
+    lineStructureClassName="dot"
+    margin={
+      Object {
+        "bottom": 80,
+        "left": 50,
+        "right": 30,
+        "top": 30,
+      }
+    }
+    shape="circle"
+    shapeColor="red"
+    showCustomLine={false}
+    stroke="red"
+    tooltipContained={false}
+    tooltipHtml={[Function]}
+    tooltipMode="mouse"
+    tooltipOffset={
+      Object {
+        "left": 0,
+        "top": -35,
+      }
+    }
+    values={[Function]}
+    width={0}
+    x={[Function]}
+    xAxis={
+      Object {
+        "innerTickSize": 5,
+        "orient": "right",
+        "tickFormat": [Function],
+        "tickPadding": 20,
+        "tickValues": Array [
+          2020-09-01T00:00:00.000Z,
+          2020-09-03T00:00:00.000Z,
+          2020-09-05T00:00:00.000Z,
+          2020-09-07T00:00:00.000Z,
+          2020-09-09T00:00:00.000Z,
+        ],
+      }
+    }
+    xScale={null}
+    y={[Function]}
+    y0={[Function]}
+    yAxis={
+      Object {
+        "innerTickSize": 5,
+        "tickFormat": [Function],
+        "tickPadding": 20,
+      }
+    }
+    yScale={null}
+  />
+</div>
+`;
+
+exports[`LineChart test renders without chart 1`] = `
+<LineChart
+  trips={Array []}
+>
+  <div
+    className="linechart"
+  />
+</LineChart>
+`;
